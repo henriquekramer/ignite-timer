@@ -16,7 +16,7 @@ export const HistoryContainer = styled.main`
 export const HistoryList = styled.div`
   flex: 1;
   overflow: auto;
-  margin-top: 2 rem;
+  margin-top: 2rem;
 
   table {
     width: 100%;
