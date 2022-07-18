@@ -7,7 +7,6 @@ import {
   useState,
 } from 'react'
 import {
-  ActionTypes,
   addNewCycleAction,
   interruptCurrentCycleAction,
   markCurrentCycleAsFinishedAction,
@@ -19,7 +18,7 @@ interface CreateCycleData {
   minutesAmount: number
 }
 
-interface CycleContextType {
+interface CyclesContextType {
   cycles: Cycle[]
   activeCycle: Cycle | undefined
   activeCycleId: string | null
@@ -30,9 +29,9 @@ interface CycleContextType {
   interruptCurrentCycle: () => void
 }
 
-export const CyclesContext = createContext({} as CycleContextType)
+export const CyclesContext = createContext({} as CyclesContextType)
 
-interface CycleContextProviderProps {
+interface CyclesContextProviderProps {
   children: ReactNode
 }
 
@@ -41,7 +40,9 @@ const cyclesInitialState = {
   activeCycleId: null,
 }
 
-export function CyclesContextProvider({ children }: CycleContextProviderProps) {
+export function CyclesContextProvider({
+  children,
+}: CyclesContextProviderProps) {
   const [cyclesState, dispatch] = useReducer(
     cyclesReducer,
     cyclesInitialState,
