@@ -13,6 +13,20 @@ export const CountdownContainer = styled.div`
     padding: 2rem 1rem;
     border-radius: 8px;
   }
+
+  @media (max-width: 580px) {
+    font-size: 6.5rem;
+  }
+
+  @media (max-width: 470px) {
+    font-size: 6rem;
+    line-height: 6rem;
+  }
+
+  @media (max-width: 440px) {
+    font-size: 3.5rem;
+    line-height: 5rem;
+  }
 `
 
 export const Separator = styled.div`
