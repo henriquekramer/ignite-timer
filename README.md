@@ -35,7 +35,7 @@ Você pode acessar o layout do projeto através do link abaixo
 <h2>Aplicativo em uso</h2>
 
 <p align="center">
-    <img src = "https://user-images.githubusercontent.com/97106134/179580576-09f4514c-2c83-4bd8-93f6-9876862c9bda.gif" width="90%" />
+    <img src = "https://user-images.githubusercontent.com/97106134/179645827-9a32e8fd-02cc-4e08-b423-555f4bb108c8.gif" width="90%" />
 </p>
 
 
